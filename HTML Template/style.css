@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+} 
+
+p {
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+/* -----------------------------------------------------NavBar (Starting)----------------------------------------------------- */
+
+nav{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: 50px;
+	background: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+
+nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #1abc9c;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+	width: 140px;
+}
+nav .start-home1, a:nth-child(1):hover~.animation{
+	width: 140px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 140px;
+}
+nav .start-home2, a:nth-child(2):hover~.animation{
+	width: 140px;
+	left: 140px;
+}
+nav a:nth-child(3){
+	width: 140px;
+}
+nav .start-home3, a:nth-child(3):hover~.animation{
+	width: 140px;
+	left: 280px;
+}
+nav a:nth-child(4){
+	width: 140px;
+}
+nav .start-home4, a:nth-child(4):hover~.animation{
+	width: 140px;
+	left: 420px;
+}
+nav a:nth-child(5){
+	width: 140px;
+}
+nav .start-home5, a:nth-child(5):hover~.animation{
+	width: 140px;
+	left: 560px;
+}
+nav a:nth-child(6){
+	width: 140px;
+}
+nav .start-home6, a:nth-child(6):hover~.animation{
+	width: 140px;
+	left: 700px;
+}
+
+/* -----------------------------------------------------NavBar (Ending)----------------------------------------------------- */
+
+/* -----------------------------------------------------Poster Image (Starting)----------------------------------------------------- */
+
+.img img{
+    width: 100%;
+}
+
+/* -----------------------------------------------------Poster Image (Ending)----------------------------------------------------- */
+
+/* -----------------------------------------------------NavItem (Starting)----------------------------------------------------- */
+.navItems {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.heading {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	background: #2c3e50;
+	color: white;
+	padding: 10px;
+}
+.content {
+	margin: 0 20px;
+	margin-top: 20px;
+}
+.heading1 {
+	font-size: 20px;
+	font-weight: bold;
+
+}
+.listHeading {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 20px;
+    padding-bottom: 10px;
+}
+.listHeading li {
+	font-size: 18px;
+}
+/* -----------------------------------------------------NavItem (Ending)----------------------------------------------------- */
+
+/* -----------------------------------------------------05 (Starting)----------------------------------------------------- */
+
+#city1 {
+    text-align: center;
+}
+
+#city1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#city1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#city1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#city1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#city1 .pro .description {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#city1 .pro .description h3 {
+    padding-top: 7px;
+    color: #1a1a1a;
+}
+
+/* -----------------------------------------------------05 (Ending)----------------------------------------------------- */
+
+/* -----------------------------------------------------CityInfo (Page header) Start */
+
+#page-header {
+    background-image: url("./img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+    text-align: center;
+}
+
+#page-header h2,
+#page-header p {
+    color: #fff;
+}
+
+/* -----------------------------------------------------CityInfo (Page header) ending */
+
+/* -----------------------------------------------------CityInfo (Table) Starting */
+
+.table-box
+{
+    margin: 50px auto;
+}
+
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+    background: #34495e;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.first-cell{
+    text-align: left;
+    padding-left: 10px;
+}
+.last-cell{
+    border-right: none;
+}
+
+/* -----------------------------------------------------CityInfo (Table) ending */
+
+/* -----------------------------------------------------CityInfo (add button) starting */
+
+.add-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.add-btn .normal {
+    background: #088178;
+    color: #fff;
+}
+
+/* -----------------------------------------------------CityInfo (add button) ending */
+
+/* -----------------------------------------------------Login starting */
+
+.login-form {
+    background: #1690A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.login-form form {
+    width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+.login-form h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.login-form input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+
+.login-form label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.login-form .normal {
+    float: right;
+	background: #088178;
+	color: #fff;
+	margin-right: 10px;
+}
